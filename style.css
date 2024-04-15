@@ -118,7 +118,7 @@ header {
 }
 
 .personal {
-  background-image: url(/alun/images/Fotos/lawnmower-man-mows-lawn-view-from-top.jpg);
+  background-image: url(/alun/images/Fotos/pasto.jpg);
   height: 10vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@ header {
   height: 80vh;
   padding: 250px 5px 0px 5px;
   width: 100%;
-  background: url(images/tramaFonoGris.png);
+  background: url(/alun/images/tramaFonoGris.png);
   background-color: #b1b1b1;
   background-size: 70%;
   color: #080438;
@@ -264,7 +264,7 @@ header {
 .limpiezaAltura {
   height: 50vh;
   width: 100%;
-  background-image: url(/alun/images/Fotos/group-workers-cleaning-windows-service-high-rise-building.jpg);
+  background-image: url(/alun/images/Fotos/vidriosAltura.jpg);
   background-position: 0% 60%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -952,7 +952,7 @@ color: #2f9ae1;
   background-color: #080438;
 }
 .contacto .contenido{
-  background-image: url(/alun/images/contacto/RECURSOS/03_TRAMA\ CON\ LOGOS\ PARA\ FONDO\ AZUL.png);
+  background-image: url(/alun/images/contacto/RECURSOS/tramaFondoAzul.png);
   background-repeat: repeat;
   object-fit: cover;
   background-size: 1000px;
@@ -1034,7 +1034,7 @@ color: #2f9ae1;
 
 footer {
   height: 50vh;
-  background-image: url(/alun/images/franja\ inferior\,\ fondo\ datos.png);
+  background-image: url(/alun/images/fondoFooter.png);
   background-size: cover;
   display: flex;
   justify-content: space-around;
