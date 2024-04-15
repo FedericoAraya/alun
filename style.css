@@ -1,0 +1,1069 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-nav {
+  align-items: center;
+}
+.nav-link {
+  font-size: small;
+  font-weight: 600;
+  color: white;
+  padding: 14px 8px 2px 8px;
+}
+.nav-link img {
+  height: 20px;
+}
+.navbar {
+  background-color: #051a59;
+}
+
+.navbar-brand img {
+  height: 35px;
+  padding-left: 50px;
+}
+.logoFlotanteWapp {
+  position: fixed;
+  bottom: 25px;
+  right:25px ;
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+}
+
+header {
+  width: 100%;
+  background-color: #080438;
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.principal h2 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  color: white;
+  padding-left: 70px;
+  padding-top: 180px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.principal h2 .sub-title {
+  color: #2f9ae1;
+  font-weight: 600;
+}
+.principal h2 .text {
+  font-size: small;
+}
+.principal img {
+  height: 120vh;
+  z-index: 2;
+}
+.principal a {
+  text-decoration: none;
+  font-size: small;
+  margin: 4px;
+}
+
+.trama {
+  background-image: url(/images/tramaHeadersLogo.png);
+
+  background-size: cover;
+  position: absolute;
+  top: 90vh;
+  opacity: 0.3;
+  width: 100%;
+  height: 30vh;
+  z-index: 1;
+}
+.trama1 {
+  background-image: url(/images/tramaHeaderCLogo.png);
+  background-size: cover;
+  position: absolute;
+  top: 90vh;
+  opacity: 0.9;
+  width: 100%;
+  height: 30vh;
+  z-index: 1;
+}
+
+.counter {
+  background-color: #080438;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 150px;
+  flex-wrap: wrap;
+}
+.counter div {
+  height: 120px;
+  width: 20%;
+  min-width: 160px;
+}
+.counter div b {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.counter div span {
+  color: #93cc04;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.personal {
+  background-image: url(/images/Fotos/lawnmower-man-mows-lawn-view-from-top.jpg);
+  height: 10vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 190px 80px;
+}
+
+.personal .line {
+  background-color: white;
+  height: 4px;
+  width: 470px;
+  margin-bottom: 8px;
+}
+.personal span {
+  display: block;
+  width: 450px;
+  color: white;
+  margin-top: 15px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 70vh;
+  padding: 100px 5px;
+  width: 100%;
+  background: url(images/tramaFondoAzul.png);
+  background-color: #080438;
+  background-size: 70%;
+}
+.cards .card1 {
+  width: 20rem;
+  height: 30.37rem;
+  position: relative;
+  margin: 5px;
+}
+
+.cards .card2 {
+  width: 20rem;
+  height: 30.37rem;
+  position: relative;
+  margin: 5px;
+}
+.cards .card3 {
+  width: 20rem;
+  height: 30.37rem;
+  margin: 5px;
+  position: relative;
+}
+.cards .card4 {
+  width: 20rem;
+  height: 30.37rem;
+  margin: 5px;
+  position: relative;
+}
+
+.fondo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: auto;
+}
+
+.capa {
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+.capa:hover {
+  opacity: 0;
+}
+
+.faja {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.esquina {
+  width: 35%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.logo {
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: 14px;
+}
+
+.areaCard {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  margin: 14px;
+  padding: 20px;
+}
+.areaCard h3 {
+  color: white;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.clients {
+  text-align: center;
+  height: 80vh;
+  padding: 250px 5px 0px 5px;
+  width: 100%;
+  background: url(images/tramaFonoGris.png);
+  background-color: #b1b1b1;
+  background-size: 70%;
+  color: #080438;
+}
+.carousel-inner {
+  margin: auto;
+  margin-top: 65px;
+  width: 75%;
+}
+.logosFirmas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: space-between;
+}
+.logosFirmas img {
+  width: 80px;
+  margin: auto;
+}
+
+.limpiezaAltura {
+  height: 50vh;
+  width: 100%;
+  background-image: url(/images/Fotos/group-workers-cleaning-windows-service-high-rise-building.jpg);
+  background-position: 0% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sobreNosotros {
+  width: 100%;
+}
+.sup {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.sup .fondo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+}
+.sup h2 {
+  color: white; 
+ position: absolute;
+ z-index: 2;
+}
+
+.sup .oscuro{
+  color: #080438;
+}
+
+.sobreNosotros .inf {
+  background: rgb(2, 80, 181);
+  background: linear-gradient(
+    308deg,
+    rgba(2, 80, 181, 1) 66%,
+    rgba(47, 154, 225, 1) 96%
+  );
+}
+.sobreNosotros .inf .textNos {
+  color: white;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+}
+.sobreNosotros .inf .textNos b {
+  color: #080438;
+  font-size: large;
+}
+
+.sobreNosotros .inf .textNos .space {
+  background-color: white;
+  height: 2px;
+  width: 30%;
+  margin: 25px auto;
+}
+.sobreNosotros .inf .textNos span {
+  margin: 7px;
+}
+
+.misionVision {
+  width: 100%;
+
+  height: 500px;
+  text-align: left;
+  position: relative;
+  background-color: #080438;
+}
+
+.misionVision .fondo {
+  position: absolute;
+  height: 500px;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+.misionVision .separador {
+  height: 3px;
+  width: 50px;
+  background-color: #080438;
+  margin-bottom: 6px;
+}
+.misionVision .contenedor {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.misionVision .left {
+  width: 50%;
+  height: 500px;
+  color: #080438;
+  z-index: 2;
+  text-align: left;
+  font-size: x-small;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.misionVision .left .mision {
+  width: 40%;
+}
+.misionVision .left h3 {
+  font-weight: 700;
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0%;
+}
+.misionVision .left .mision span {
+  margin-bottom: 20px;
+}
+.misionVision .right {
+  width: 50%;
+  color: white;
+  z-index: 0;
+  position: relative;
+  left: 0;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.misionVision .right .caract {
+  display: flex;
+  flex-direction: row;
+  font-size: x-small;
+  font-weight: 100;
+  text-align: left;
+  align-items: center;
+  margin: 20px;
+}
+.misionVision .right .caract h3 {
+  font-size: large;
+  font-weight: 100;
+}
+
+.misionVision .right img {
+  height: 70px;
+  margin: 0 50px;
+}
+.misionVision .right .img1 {
+  position: absolute;
+  left: -110px;
+}
+.misionVision .right .img2 {
+  position: absolute;
+  left: -135px;
+}
+.misionVision .right .img3 {
+  position: absolute;
+  left: -160px;
+}
+
+.misionVision .right .agil {
+  position: relative;
+  left: 30px;
+  max-width: 70%;
+}
+.misionVision .right .compr {
+  position: relative;
+  left: 5px;
+  max-width: 70%;
+}
+.misionVision .right .inno {
+  position: relative;
+  left: -20px;
+  max-width: 70%;
+}
+.clean img{
+  width: 100%;
+  height: 300px;
+position: relative;
+object-fit: cover;
+}
+
+.alcance {
+  width: 100%;
+  height: 600px;
+  background-color: #080438;
+  display: flex;
+  flex-direction: row;
+}
+.alcance .textAlcance .encabezado {
+  width: 50%;
+  color: white;
+  margin: 100px auto;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+}
+.alcance .logosAlcance {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.alcance .logosAlcance div {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+.alcance .logosAlcance img {
+  width: 45px;
+}
+.alcance .logosAlcance span {
+  font-size: xx-small;
+  color: white;
+  margin-top: 7px;
+}
+.alcance .logosAlcance .line{
+  margin-top: 6px;
+  height: 2px;
+  width: 50px;
+}
+.alcance .alcanceMap {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+.alcance .alcanceMap .map img {
+  width: 200px;
+  position: absolute;
+  left: 280px;
+  top: 100px;
+}
+.alcance .alcanceMap .pampa img {
+  width: 50px;
+  position: absolute;
+  left: 313px;
+  top: 270px;
+  opacity: 0;
+}
+.alcance .alcanceMap .pampa span {
+  position: absolute;
+  left: 200px;
+  top: 278px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+.alcance .alcanceMap .pampa .enlace {
+  height: 2px;
+  width: 140px;
+  position: absolute;
+  left: 200px;
+  top: 295px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+
+.alcance .alcanceMap .rio img {
+  height: 54px;
+  position: absolute;
+  left: 286px;
+  top: 307px;
+  opacity: 0;
+}
+.alcance .alcanceMap .rio span {
+  position: absolute;
+  left: 420px;
+  top: 336px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+.alcance .alcanceMap .rio .enlace {
+  height: 2px;
+  width: 152px;
+  position: absolute;
+  left: 320px;
+  top: 355px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.alcance .alcanceMap .juan img {
+  height: 50px;
+  position: absolute;
+  left: 289px;
+  top: 194px;
+  opacity: 0;
+}
+.alcance .alcanceMap .juan span {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+.alcance .alcanceMap .juan .enlace {
+  height: 2px;
+  width: 108px;
+  position: absolute;
+  left: 200px;
+  top: 216px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.alcance .alcanceMap .luis img {
+  height: 52px;
+  position: absolute;
+  left: 323px;
+  top: 230px;
+  opacity: 0;
+}
+.alcance .alcanceMap .luis span {
+  position: absolute;
+  left: 450px;
+  top: 240px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+.alcance .alcanceMap .luis .enlace {
+  height: 2px;
+  width: 148px;
+  position: absolute;
+  left: 345px;
+  top: 258px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.alcance .alcanceMap .menza img {
+  height: 57px;
+  position: absolute;
+  left: 297px;
+  top: 240px;
+  opacity: 0;
+}
+.alcance .alcanceMap .menza span {
+  position: absolute;
+  left: 200px;
+  top: 247px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+.alcance .alcanceMap .menza .enlace {
+  height: 2px;
+  width: 115px;
+  position: absolute;
+  left: 200px;
+  top: 262px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.alcance .alcanceMap .bsas img {
+  height: 93px;
+  position: absolute;
+  left: 362px;
+  top: 252px;
+  opacity: 0;
+}
+.alcance .alcanceMap .bsas span {
+  position: absolute;
+  left: 470px;
+  top: 285px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+.alcance .alcanceMap .bsas .enlace {
+  height: 2px;
+  width: 142px;
+  position: absolute;
+  left: 395px;
+  top: 301px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.alcance .alcanceMap .luis img:hover,
+.alcance .alcanceMap .juan img:hover,
+.alcance .alcanceMap .rio img:hover,
+.alcance .alcanceMap .menza img:hover,
+.alcance .alcanceMap .bsas img:hover,
+.alcance .alcanceMap .pampa img:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.alcance .provincias {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.alcance .ciudades {
+  position: absolute;
+  left: 30px;
+  top: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.alcance .provincias span {
+  color: white;
+  text-decoration: underline 2px #2f9ae1;
+  text-underline-offset: 5px;
+}
+.alcance .ciudades span {
+  color: white;
+  text-decoration: underline 2px #93cc04;
+  text-underline-offset: 5px;
+}
+.alcance .provincias h4 {
+  color: #2f9ae1;
+  font-size: 60px;
+  margin: 10px;
+  font-weight: 700;
+}
+.alcance .ciudades h4 {
+  color: #93cc04;
+  font-size: 60px;
+  margin: 10px;
+  font-weight: 700;
+}
+.servicios {
+  background-color: #080438;
+}
+.servicios .info{
+padding-top: 80px;
+padding-bottom: 80px;
+}
+.servicios .info .imagenes {
+  position: relative;
+  width: 70%;
+  height: 300px;
+  margin: auto;
+}
+.carousel-inner {
+  height: 300px;
+  width: inherit;
+  position: relative;
+}
+
+.servicios .info .imagenes #carouselExampleAutoplaying .carousel-item {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  left: 200px;
+}
+.servicios .info .imagenes .logoa img {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  height: 50px;
+}
+
+.servicios .info .imagenes .colorIzq img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+}
+.servicios .info .imagenes .colorDer img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+}
+
+.servicios .info .imagenes .faja img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11px;
+  width: 100%;
+}
+.servicios .info .imagenes .area {
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.servicios .info .imagenes .area div {
+  background-color: white;
+  height: 4px;
+  width: 45px;
+}
+
+.servicios .container {
+  color: white;
+  width: 70%;
+  margin-top: 30px;
+ 
+}
+.servicios .container .col{
+  text-align: left;
+  width: 80%;
+}
+.servicios .container img{
+  height: 40px;
+  margin-bottom: 10px;
+}
+.servicios .container h3{
+  font-size: larger;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.servicios .container .resaltado{
+  font-size: small;
+}
+.servicios .container ul{
+  font-size: small;
+  text-align: left;
+}
+.color1{
+  color: #93cc04;
+  
+}
+.colorb1{
+  background-color:  #93cc04;
+}
+.color2{
+  color: #ed9005;
+  
+}
+.colorb2{
+  background-color: #ed9005;
+}
+
+.color3{
+color: #2f9ae1;
+
+}
+.colorb3{
+  background-color: #2f9ae1;
+}
+
+.servicios .container .line{
+  width: 50px;
+  height: 3px;
+ 
+  margin-bottom: 10px;
+}
+
+.servicios .container .resaltado{
+  margin-bottom: 15px;
+  
+}
+
+.servicios .nuestrasImagenes{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  
+}
+
+.productos .ventas .imagenes {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: #080438;
+}
+.productos .ventas .imagenes .colorIzq img {
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productos .ventas .imagenes .faja img {
+  height: 12px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.productos .ventas .imagenes .logoa img {
+  height: 40px;
+  position: absolute;
+  bottom: 60px;
+  left: 200px;
+}
+
+.productos .ventas .imagenes .area {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  font-size: x-large;
+  font-weight: 100;
+}
+.productos .ventas .imagenes .area div {
+  background-color: white;
+  width: 50px;
+  height: 4px;
+}
+.productos .ventas .imagenes .description {
+  color: white;
+  width: 30%;
+  height: 50vh;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+}
+.productos .ventas .imagenes .description span {
+  margin-bottom: 20px;
+}
+.productos .ventas .imagenes .description h3 {
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+  align-items: center;
+}
+
+.productos .ventas .imagenes .description h3 button {
+  margin-left: 25px;
+  background-color: inherit;
+  color: white;
+  border: #ed9005 2px solid;
+  border-radius: 36px;
+  padding: 6px 10px;
+  font-size: medium;
+}
+
+.productos .ventas .diferencia {
+  height: 600px;
+  background-color: #080438;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos .ventas .diferencia .imgDif {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;  
+}
+.productos .ventas .diferencia .container {
+  width: 70%;
+  position: absolute;
+  top: 260px;
+}
+.productos .ventas .diferencia .container .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productos .ventas .diferencia .container .col img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.productos .ventas .diferencia .container .col span {
+  width: 80%;
+  color: white;
+  font-size: small;
+}
+.contacto {
+  background-color: #080438;
+}
+.contacto .contenido{
+  background-image: url(/images/contacto/RECURSOS/03_TRAMA\ CON\ LOGOS\ PARA\ FONDO\ AZUL.png);
+  background-repeat: repeat;
+  object-fit: cover;
+  background-size: 1000px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 100px 0 100px 200px;
+  position: relative;
+}
+.contacto .formulario h3{
+  color: white;
+}
+.contacto .formulario form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: small;
+
+  font-weight: 600;
+}
+.contacto .formulario form textarea,
+.contacto .formulario form input {
+  margin-bottom: 20px;
+}
+
+.contacto .formulario form button {
+  color: white;
+  border: none;
+  background-color: #051a59;
+  font-size: small;
+  padding: 5px;
+  font-weight: 600;
+}
+.contacto .info{
+  width: 50%;
+  position: relative;
+}
+.contacto  .info .logoConImagen{
+  position: absolute;
+  right: -150px;
+  bottom: -3px;
+ height: 120%;
+ z-index: 0;
+}
+
+.contacto  .info .data{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  z-index: 3;
+}
+.contacto  .info .data span{
+  margin-bottom: 7px;
+}
+.contacto  .info .iconos {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 156px;
+  left: 100px;  
+ 
+}
+.contacto  .info .iconos img{
+  width: 25px;
+  padding: 3px;
+ margin-bottom: 5px;
+}
+
+
+
+footer {
+  height: 50vh;
+  background-image: url(/images/franja\ inferior\,\ fondo\ datos.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 50px;
+}
+footer .logoPie img {
+  width: 15rem;
+}
+footer .datos {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0.7;
+}
+footer .datos ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.datos ul a {
+  text-decoration: none;
+  color: white;
+}
+.redes {
+  margin: 0 15px;
+  
+}
+.redes img{
+  height: 25px;
+  margin: 10px;
+}
