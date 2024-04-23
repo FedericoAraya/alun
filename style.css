@@ -4,12 +4,16 @@
 }
 .navbar-nav {
   align-items: center;
+
 }
 .nav-link {
   font-size: small;
   font-weight: 600;
   color: white;
   padding: 14px 8px 2px 8px;
+  background-color: #051a59;
+  
+  
 }
 .nav-link img {
   height: 20px;
@@ -30,26 +34,35 @@
   width: 50px;
   z-index: 9;
 }
+.logoFlotanteWapp:hover{
+  opacity: 0.9;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
 
 header {
   width: 100%;
   background-color: #080438;
 }
 .principal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+ height: 700px;
+  width: 100%;
+  position: relative;
+  overflow:hidden;
+
 }
 .principal h2 {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  
   color: white;
-  padding-left: 70px;
-  padding-top: 180px;
-  font-size: 40px;
+
+  font-size: 2.5rem;
   font-weight: 200;
+ padding: 20px;
 }
+
+
 
 .principal h2 .sub-title {
   color: #2f9ae1;
@@ -57,11 +70,40 @@ header {
 }
 .principal h2 .text {
   font-size: small;
+  padding-right: 60px;
+ 
 }
 .principal img {
-  height: 120vh;
-  z-index: 2;
+  height: 300px;
+  position: absolute;
+  right: -100px;
+  top: 150px;
+
 }
+@media only screen and (min-width: 769px) {
+
+    .principal h2 {
+      min-width: 400px;
+      width: 50%;
+      position: absolute;
+  left: 100px;
+  top: 180px;
+  padding: 0;
+    }
+    .principal h2 .text {
+      min-width: 300px;
+      width: 50%;
+      padding: 0;
+    }
+    .principal img {
+      height: 700px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  
+
 .principal a {
   text-decoration: none;
   font-size: small;
@@ -69,45 +111,44 @@ header {
 }
 
 .trama {
-  background-image: url(/alun/images/tramaHeadersLogo.png);
 
-  background-size: cover;
   position: absolute;
-  top: 90vh;
-  opacity: 0.3;
+  top: 520px;
+  opacity: 0.1;
   width: 100%;
-  height: 30vh;
+  height: 180px;
   z-index: 1;
+  object-fit: cover;
 }
 .trama1 {
-  background-image: url(/alun/images/tramaHeaderCLogo.png);
-  background-size: cover;
+  object-fit: cover;
   position: absolute;
-  top: 90vh;
+  top: 520px;
   opacity: 0.9;
   width: 100%;
-  height: 30vh;
+  height: 180px;
   z-index: 1;
 }
 
 .counter {
   background-color: #080438;
   width: 100%;
-
   display: flex;
-  justify-content: space-evenly;
-  padding: 30px 150px;
+  justify-content: center;
+  padding: 100px 0;
   flex-wrap: wrap;
+  
 }
-.counter div {
-  height: 120px;
-  width: 20%;
-  min-width: 160px;
+.counter .flex-row {   
+  min-width: 150px;
+  flex-wrap: nowrap;
+  
 }
 .counter div b {
   color: white;
-  font-size: 2rem;
+  font-size: 2.7rem;
   text-align: center;
+  
 }
 
 .counter div span {
@@ -115,67 +156,60 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
+  
+}
+.counter div .mas{
+  color: white;
+  font-weight: 100;
+  font-size: 2.7rem;
+  text-align: center;
+ 
 }
 
 .personal {
-  background-image: url(/alun/images/Fotos/pasto.jpg);
-  height: 10vh;
+  background-image: url(images/Fotos/pasto.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  height: 350px;
   width: 100%;
   padding: 190px 80px;
+  z-index: 7;
 }
 
 .personal .line {
   background-color: white;
-  height: 4px;
-  width: 470px;
+  height: 3.5px;
+  width: 320px;
   margin-bottom: 8px;
 }
 .personal span {
   display: block;
-  width: 450px;
+  width: 550px;
   color: white;
   margin-top: 15px;
+  font-size: larger;
 }
 .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 70vh;
+  height: 470px;
   padding: 100px 5px;
   width: 100%;
   background: url(/alun/images/tramaFondoAzul.png);
   background-color: #080438;
   background-size: 70%;
+  z-index: 2;
 }
-.cards .card1 {
+.cards .card1{
   width: 20rem;
   height: 30.37rem;
   position: relative;
   margin: 5px;
 }
 
-.cards .card2 {
-  width: 20rem;
-  height: 30.37rem;
-  position: relative;
-  margin: 5px;
-}
-.cards .card3 {
-  width: 20rem;
-  height: 30.37rem;
-  margin: 5px;
-  position: relative;
-}
-.cards .card4 {
-  width: 20rem;
-  height: 30.37rem;
-  margin: 5px;
-  position: relative;
-}
+
 
 .fondo {
   width: 100%;
@@ -186,19 +220,17 @@ header {
 
 .capa {
   width: 100%;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
 }
-.capa:hover {
-  opacity: 0;
-}
+
 
 .faja {
   width: 100%;
   height: 15px;
   position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .esquina {
@@ -206,7 +238,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 4;
+  z-index: 2;
 }
 
 .logo {
@@ -214,7 +246,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 5;
+  z-index: 3;
   margin: 14px;
 }
 
@@ -223,7 +255,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 5;
+  z-index: 2;
   margin: 14px;
   padding: 20px;
 }
@@ -237,13 +269,14 @@ header {
 
 .clients {
   text-align: center;
-  height: 80vh;
+  height: 570px;
   padding: 250px 5px 0px 5px;
   width: 100%;
   background: url(/alun/images/tramaFonoGris.png);
   background-color: #b1b1b1;
   background-size: 70%;
   color: #080438;
+  z-index: 2;
 }
 .carousel-inner {
   margin: auto;
@@ -262,9 +295,9 @@ header {
 }
 
 .limpiezaAltura {
-  height: 50vh;
+  height: 400px;
   width: 100%;
-  background-image: url(/alun/images/Fotos/vidriosAltura.jpg);
+  background-image: url(images/Fotos/vidriosAltura.jpg);
   background-position: 0% 60%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,13 +375,7 @@ header {
   background-color: #080438;
 }
 
-.misionVision .fondo {
-  position: absolute;
-  height: 500px;
-  top: 0;
-  left: 0;
-  width: 50%;
-}
+
 .misionVision .separador {
   height: 3px;
   width: 50px;
@@ -375,9 +402,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+
 }
+.misionVision .left .fondo {
+  height: 500px;
+  width: 1000px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  }
+
 .misionVision .left .mision {
   width: 40%;
+  z-index: 1;
 }
 .misionVision .left h3 {
   font-weight: 700;
@@ -400,54 +438,62 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
-.misionVision .right .caract {
+.misionVision .right .info {
   display: flex;
   flex-direction: row;
   font-size: x-small;
   font-weight: 100;
   text-align: left;
-  align-items: center;
+  width: 70%;
+  min-width: 350px;
   margin: 20px;
 }
-.misionVision .right .caract h3 {
+.misionVision .right .info h3 {
   font-size: large;
   font-weight: 100;
 }
 
-.misionVision .right img {
+.misionVision .left .logo {
   height: 70px;
+  width: auto;
   margin: 0 50px;
 }
-.misionVision .right .img1 {
-  position: absolute;
-  left: -110px;
+.misionVision .left .img1{
+  position:absolute;
+  right:-43px;
+  top: 24%;
 }
-.misionVision .right .img2 {
-  position: absolute;
-  left: -135px;
+.misionVision .left .img2{
+  position:absolute;
+  right:0;
+  top: 44%;
 }
-.misionVision .right .img3 {
-  position: absolute;
-  left: -160px;
+.misionVision .left .img3{
+  position:absolute;
+  right:50px;
+  top: 64%;
 }
 
-.misionVision .right .agil {
-  position: relative;
-  left: 30px;
-  max-width: 70%;
+.misionVision .right .caract1 {
+  position:absolute  ;
+  left:20px;
+  top: 20%;
 }
-.misionVision .right .compr {
-  position: relative;
-  left: 5px;
-  max-width: 70%;
-}
-.misionVision .right .inno {
-  position: relative;
+.misionVision .right .caract2 {
+  position: absolute;
   left: -20px;
-  max-width: 70%;
+  top: 40%;
 }
+.misionVision .right .caract3 {
+  position: absolute;
+  left: -60px;
+  top: 60%;
+}
+
+
 .clean img{
   width: 100%;
   height: 300px;
@@ -461,6 +507,10 @@ object-fit: cover;
   background-color: #080438;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+.alcance .textAlcance{
+  width: auto;
 }
 .alcance .textAlcance .encabezado {
   width: 50%;
@@ -469,7 +519,17 @@ object-fit: cover;
   font-size: small;
   display: flex;
   flex-direction: column;
+  
 }
+
+.alcance .textAlcance .hola{
+  width: 100px;
+  height: 2px;
+  background-color: #2f9ae1;
+  z-index: 9;
+  margin-bottom: 15px;
+}
+
 .alcance .logosAlcance {
   width: 50%;
   display: flex;
@@ -497,10 +557,12 @@ object-fit: cover;
   width: 50px;
 }
 .alcance .alcanceMap {
-  width: 100%;
+  width: 600px;
+  min-width: 600px;
   height: auto;
-  position: relative;
+ position: relative;
   transition: transform 0.4s ease;
+right: 30px;
 }
 .alcance .alcanceMap .map img {
   width: 200px;
@@ -548,6 +610,7 @@ object-fit: cover;
   text-transform: uppercase;
   font-size: 10px;
   color: white;
+  width: 200px;
 }
 .alcance .alcanceMap .rio .enlace {
   height: 2px;
@@ -596,6 +659,7 @@ object-fit: cover;
   text-transform: uppercase;
   font-size: 10px;
   color: white;
+  width: 200px;
 }
 .alcance .alcanceMap .luis .enlace {
   height: 2px;
@@ -644,6 +708,7 @@ object-fit: cover;
   text-transform: uppercase;
   font-size: 10px;
   color: white;
+  width: 200px;
 }
 .alcance .alcanceMap .bsas .enlace {
   height: 2px;
@@ -662,6 +727,7 @@ object-fit: cover;
 .alcance .alcanceMap .bsas img:hover,
 .alcance .alcanceMap .pampa img:hover {
   opacity: 0.6;
+  transition: 0.5s;
   transform: scale(1.2);
 }
 .alcance .provincias {
@@ -708,7 +774,7 @@ object-fit: cover;
 }
 .servicios .info{
 padding-top: 80px;
-padding-bottom: 80px;
+padding-bottom: 10px;
 }
 .servicios .info .imagenes {
   position: relative;
@@ -774,13 +840,13 @@ padding-bottom: 80px;
 
 .servicios .container {
   color: white;
-  width: 70%;
-  margin-top: 30px;
+  width: 65%;
+  margin-top: 10px;
  
 }
 .servicios .container .col{
   text-align: left;
-  width: 80%;
+  padding: 30px;
 }
 .servicios .container img{
   height: 40px;
@@ -797,6 +863,7 @@ padding-bottom: 80px;
 .servicios .container ul{
   font-size: small;
   text-align: left;
+  padding: 0 0 0 15px;
 }
 .color1{
   color: #93cc04;
@@ -842,7 +909,7 @@ color: #2f9ae1;
 
 .productos .ventas .imagenes {
   width: 100%;
-  height: 50vh;
+  height: 400px;
   position: relative;
   background-color: #080438;
 }
@@ -865,7 +932,7 @@ color: #2f9ae1;
   height: 40px;
   position: absolute;
   bottom: 60px;
-  left: 200px;
+  left:15%;
 }
 
 .productos .ventas .imagenes .area {
@@ -875,7 +942,7 @@ color: #2f9ae1;
   z-index: 2;
   position: absolute;
   top: 80px;
-  left: 200px;
+  left: 15%;
   font-size: x-large;
   font-weight: 100;
 }
@@ -887,9 +954,11 @@ color: #2f9ae1;
 .productos .ventas .imagenes .description {
   color: white;
   width: 30%;
-  height: 50vh;
+  min-width: 400px;
+  max-width: 450px;
+  height: 400px;
   position: absolute;
-  left: 50%;
+  right: 15%;
   top: 80px;
   font-size: small;
   display: flex;
@@ -898,25 +967,32 @@ color: #2f9ae1;
 .productos .ventas .imagenes .description span {
   margin-bottom: 20px;
 }
-.productos .ventas .imagenes .description h3 {
+.productos .ventas .imagenes .description h6 {
   display: flex;
   flex-direction: row;
-  font-size: medium;
+  font-size:small;
   align-items: center;
+  margin-top: 10px;
+}
+.productos .ventas .imagenes .description a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.productos .ventas .imagenes .description img{
+  width: 33px;
+  margin: 10px;
 }
 
-.productos .ventas .imagenes .description h3 button {
-  margin-left: 25px;
-  background-color: inherit;
-  color: white;
-  border: #ed9005 2px solid;
-  border-radius: 36px;
-  padding: 6px 10px;
-  font-size: medium;
+.productos .ventas .imagenes .description h6 b {
+margin-left: 5px;
+  color: #ed9005;
+
 }
 
 .productos .ventas .diferencia {
-  height: 600px;
+  height: 750px;
   background-color: #080438;
   position: relative;
   display: flex;
@@ -948,6 +1024,18 @@ color: #2f9ae1;
   color: white;
   font-size: small;
 }
+.productos .marcasTop{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 40px;
+}
+.productos .marcasTop img{
+  width: 250px;
+  margin: auto;
+}
 .contacto {
   background-color: #080438;
 }
@@ -959,12 +1047,13 @@ color: #2f9ae1;
   display: flex;
   flex-direction: row;
   width: 100%;
+  position: relative;
 }
 
 .contacto .formulario {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   padding: 100px 0 100px 200px;
   position: relative;
 }
@@ -976,8 +1065,9 @@ color: #2f9ae1;
   flex-direction: column;
   color: white;
   font-size: small;
-
+max-width: 400px;
   font-weight: 600;
+  min-width: 300px;
 }
 .contacto .formulario form textarea,
 .contacto .formulario form input {
@@ -987,22 +1077,16 @@ color: #2f9ae1;
 .contacto .formulario form button {
   color: white;
   border: none;
-  background-color: #051a59;
-  font-size: small;
-  padding: 5px;
+  background: rgb(2,80,181);
+  background: linear-gradient(270deg, rgba(2,80,181,1) 2%, rgba(47,154,225,1) 19%, rgba(2,80,181,1) 71%);font-size: small;
+  padding: 5px; 
   font-weight: 600;
 }
 .contacto .info{
   width: 50%;
   position: relative;
 }
-.contacto  .info .logoConImagen{
-  position: absolute;
-  right: -150px;
-  bottom: -3px;
- height: 120%;
- z-index: 0;
-}
+
 
 .contacto  .info .data{
   color: white;
@@ -1012,6 +1096,7 @@ color: #2f9ae1;
   top: 160px;
   left: 150px;
   z-index: 3;
+  width: 280px;
 }
 .contacto  .info .data span{
   margin-bottom: 7px;
@@ -1030,11 +1115,18 @@ color: #2f9ae1;
  margin-bottom: 5px;
 }
 
-
+.contacto  .contenido .logoConImagen{
+  position: absolute;
+right: 0px;
+top: 0px;
+ height: 100%;
+ z-index: 0;
+ 
+}
 
 footer {
   height: 50vh;
-  background-image: url(/alun/images/fondoFooter.png);
+  background-image: url(images/fondoFooter.png);
   background-size: cover;
   display: flex;
   justify-content: space-around;
