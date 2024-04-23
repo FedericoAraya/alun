@@ -167,7 +167,7 @@ header {
 }
 
 .personal {
-  background-image: url(images/Fotos/pasto.jpg);
+  background-image: url(/alun/images/Fotos/pasto.jpg);
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -272,7 +272,7 @@ header {
   height: 570px;
   padding: 250px 5px 0px 5px;
   width: 100%;
-  background: url(/alun/images/tramaFonoGris.png);
+  background: url(/alun/alun/images/tramaFonoGris.png);
   background-color: #b1b1b1;
   background-size: 70%;
   color: #080438;
@@ -297,7 +297,7 @@ header {
 .limpiezaAltura {
   height: 400px;
   width: 100%;
-  background-image: url(images/Fotos/vidriosAltura.jpg);
+  background-image: url(/alunimages/Fotos/vidriosAltura.jpg);
   background-position: 0% 60%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1126,7 +1126,7 @@ top: 0px;
 
 footer {
   height: 50vh;
-  background-image: url(images/fondoFooter.png);
+  background-image: url(/alun/images/fondoFooter.png);
   background-size: cover;
   display: flex;
   justify-content: space-around;
