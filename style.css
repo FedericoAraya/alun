@@ -2,6 +2,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body {
+  min-height: 100vh;
+}
 .navbar-nav {
   align-items: center;
 }
@@ -10,45 +13,61 @@
   font-weight: 600;
   color: white;
   padding: 14px 8px 2px 8px;
+  background-color: #051a59;
 }
 .nav-link img {
   height: 20px;
 }
 .navbar {
   background-color: #051a59;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
-
+.navbar .container-fluid{
+  max-width: 1680px;
+}
 .navbar-brand img {
   height: 35px;
-  padding-left: 50px;
+  margin-left: 82px;
 }
 .logoFlotanteWapp {
   position: fixed;
   bottom: 25px;
-  right:25px ;
+  right: 25px;
   height: 50px;
   width: 50px;
   z-index: 9;
 }
+.logoFlotanteWapp:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
 
 header {
   width: 100%;
-  background-color: #080438;
+  background: rgb(5,26,89);
+background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
 }
 .principal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  height: 750px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
 }
 .principal h2 {
   display: flex;
   flex-direction: column;
-  width: 35%;
   color: white;
-  padding-left: 70px;
-  padding-top: 180px;
-  font-size: 40px;
+  width: 420px;
+  font-size: 2.7rem;
   font-weight: 200;
+  position: absolute;
+  left: 90px;
+  top: 180px;
+  padding: 0;
 }
 
 .principal h2 .sub-title {
@@ -56,125 +75,124 @@ header {
   font-weight: 600;
 }
 .principal h2 .text {
-  font-size: small;
+  font-size: 0.93rem;
+  padding-right: 60px;
+  min-width: 400px;
+  width: 50%;
+  padding: 0;
+  font-weight: 200;
 }
 .principal img {
-  height: 120vh;
-  z-index: 2;
+  height: 750px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
 }
+
 .principal a {
   text-decoration: none;
   font-size: small;
   margin: 4px;
 }
-
 .trama {
-  background-image: url(/alun/images/tramaHeadersLogo.png);
-
-  background-size: cover;
+  height: 175px;
   position: absolute;
-  top: 90vh;
-  opacity: 0.3;
+  top: 480px;
   width: 100%;
-  height: 30vh;
+  background-image: url(/alun/images/fondo\ logos\ 900PX.png);
   z-index: 1;
-}
-.trama1 {
-  background-image: url(/alun/images/tramaHeaderCLogo.png);
-  background-size: cover;
-  position: absolute;
-  top: 90vh;
-  opacity: 0.9;
-  width: 100%;
-  height: 30vh;
-  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: auto 175px;
 }
 
 .counter {
-  background-color: #080438;
+  
   width: 100%;
-
+  
   display: flex;
-  justify-content: space-evenly;
-  padding: 30px 150px;
+  justify-content: center;
+  padding: 40px 0 70px 0;
   flex-wrap: wrap;
 }
-.counter div {
-  height: 120px;
-  width: 20%;
-  min-width: 160px;
+.counter .flex-row {  
+  flex-wrap: nowrap;
+  padding: 0;
+  height: 50px;  
+}
+.counter .flex-column{
+  margin: 28px;
 }
 .counter div b {
   color: white;
-  font-size: 2rem;
+  font-size: 2.7rem;
   text-align: center;
+  padding: 0;
 }
 
 .counter div span {
   color: #93cc04;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  text-align: center;
+  padding: 0;
+}
+.counter div .mas {
+  color: white;
+  font-weight: 100;
+  font-size: 2.7rem;
   text-align: center;
 }
 
 .personal {
   background-image: url(/alun/images/Fotos/pasto.jpg);
-  height: 10vh;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  padding: 190px 80px;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;  
+  z-index: 9; 
 }
-
+.personal .description{
+  max-width: 1680px;
+  height: 400px;
+  margin: auto;
+  padding: 160px 0 0 90px;
+}
 .personal .line {
   background-color: white;
-  height: 4px;
-  width: 470px;
+  height: 3.5px;
+  width: 320px;
   margin-bottom: 8px;
+ 
 }
 .personal span {
   display: block;
-  width: 450px;
+  width: 550px;
   color: white;
   margin-top: 15px;
+  font-size: larger;
+  line-height: 1.2;
 }
 .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 70vh;
+  height: 430px;
   padding: 100px 5px;
   width: 100%;
   background: url(/alun/images/tramaFondoAzul.png);
-  background-color: #080438;
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
   background-size: 70%;
+  z-index: 2;
 }
 .cards .card1 {
   width: 20rem;
   height: 30.37rem;
   position: relative;
   margin: 5px;
-}
-
-.cards .card2 {
-  width: 20rem;
-  height: 30.37rem;
-  position: relative;
-  margin: 5px;
-}
-.cards .card3 {
-  width: 20rem;
-  height: 30.37rem;
-  margin: 5px;
-  position: relative;
-}
-.cards .card4 {
-  width: 20rem;
-  height: 30.37rem;
-  margin: 5px;
-  position: relative;
 }
 
 .fondo {
@@ -186,11 +204,8 @@ header {
 
 .capa {
   width: 100%;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
-}
-.capa:hover {
-  opacity: 0;
 }
 
 .faja {
@@ -198,7 +213,7 @@ header {
   height: 15px;
   position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .esquina {
@@ -206,7 +221,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 4;
+  z-index: 2;
 }
 
 .logo {
@@ -214,60 +229,133 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 5;
+  z-index: 3;
   margin: 14px;
 }
 
 .areaCard {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
-  z-index: 5;
-  margin: 14px;
-  padding: 20px;
+  z-index: 2;
+  margin: 0 10px;
+  padding: 0 10px;
 }
 .areaCard h3 {
   color: white;
-  font-size: large;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
-  font-weight: 400;
+  font-weight: lighter;
+  margin: 0;
+}
+.card1 .lineaCard{
+  background-color: white;
+  height: 3px;
+  width: 50px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.button-28 {
+  
+  
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 20px;
+  outline: none;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; 
+  will-change: transform;
+}
+
+ .button-28:disabled {
+  pointer-events: none;
+}
+
+ .button-28:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.card1 .button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.card1 .button-28 a{
+  text-decoration: none;
 }
 
 .clients {
   text-align: center;
-  height: 80vh;
+  height: 500px;
   padding: 250px 5px 0px 5px;
   width: 100%;
   background: url(/alun/images/tramaFonoGris.png);
-  background-color: #b1b1b1;
+  background: rgb(199,198,198);
+  background: radial-gradient(circle, rgba(199,198,198,1) 0%, rgba(152,153,155,1) 100%);
   background-size: 70%;
   color: #080438;
+  z-index: 2;
+  font-size: xx-large;
 }
-.carousel-inner {
-  margin: auto;
-  margin-top: 65px;
-  width: 75%;
-}
-.logosFirmas {
-  display: flex;
-  flex-direction: row;
+.slider{
   width: 100%;
-  align-content: space-between;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
 }
-.logosFirmas img {
-  width: 80px;
+.slider .slide-track{
+  display: flex;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(200px * 18);
+}
+.slider .slide{
+  width: 200px;
+  justify-content: center;
+  position: relative;
   margin: auto;
 }
 
-.limpiezaAltura {
-  height: 50vh;
+.slider .slide img{
   width: 100%;
+  padding: 30px;
+ 
+}
+
+@keyframes scroll{
+  0%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(calc(-200px * 9));
+    transform: translateX(calc(-200px * 9));
+  }
+}
+.limpiezaAltura {
+
   background-image: url(/alun/images/Fotos/vidriosAltura.jpg);
-  background-position: 0% 60%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%; 
 }
 
 .sobreNosotros {
@@ -275,7 +363,7 @@ header {
 }
 .sup {
   width: 100%;
-  height: 400px;
+  height: 450px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -284,17 +372,17 @@ header {
 }
 .sup .fondo {
   width: 100%;
-  height: 400px;
+  height: 450px;
   object-fit: cover;
-
 }
 .sup h2 {
-  color: white; 
- position: absolute;
- z-index: 2;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  font-size: 3rem;
 }
 
-.sup .oscuro{
+.sup .oscuro {
   color: #080438;
 }
 
@@ -309,18 +397,21 @@ header {
 .sobreNosotros .inf .textNos {
   color: white;
   text-align: center;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
-
-  font-size: medium;
+max-width: 800px;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 50px 0;
 }
 .sobreNosotros .inf .textNos b {
-  color: #080438;
+  color: white;
   font-size: large;
+  font-weight: 200;
+  font-size: 1.45rem;
+  line-height: 1.2;
 }
 
 .sobreNosotros .inf .textNos .space {
@@ -332,23 +423,20 @@ header {
 .sobreNosotros .inf .textNos span {
   margin: 7px;
 }
+.sobreNosotros .inf .textNos button{
+  margin: 30px auto;  
+  width: 200px;  
+}
 
 .misionVision {
   width: 100%;
-
   height: 500px;
   text-align: left;
   position: relative;
-  background-color: #080438;
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
 }
 
-.misionVision .fondo {
-  position: absolute;
-  height: 500px;
-  top: 0;
-  left: 0;
-  width: 50%;
-}
 .misionVision .separador {
   height: 3px;
   width: 50px;
@@ -356,28 +444,39 @@ header {
   margin-bottom: 6px;
 }
 .misionVision .contenedor {
-  width: 100%;
-
+  width: 50%;
+margin: 0 auto;
   display: flex;
   justify-content: center;
   text-align: center;
+  max-width: 800px;
 }
 
 .misionVision .left {
-  width: 50%;
+  width: 100%;
   height: 500px;
   color: #080438;
   z-index: 2;
   text-align: left;
-  font-size: x-small;
+  font-size: 0.8rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
+  position: relative;
 }
+.misionVision .left .fondo {
+  height: 500px;
+  width: 1000px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
 .misionVision .left .mision {
-  width: 40%;
+  width: 300px;
+  z-index: 1;
 }
 .misionVision .left h3 {
   font-weight: 700;
@@ -400,82 +499,113 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
-.misionVision .right .caract {
+.misionVision .right .info {
   display: flex;
   flex-direction: row;
-  font-size: x-small;
+  font-size: 0.7rem;
   font-weight: 100;
   text-align: left;
-  align-items: center;
+  width:300px;
+  
   margin: 20px;
 }
-.misionVision .right .caract h3 {
+.misionVision .right .info h3 {
   font-size: large;
   font-weight: 100;
+  margin-bottom: 2px;
 }
 
-.misionVision .right img {
+.misionVision .left .logo {
   height: 70px;
+  width: auto;
   margin: 0 50px;
 }
-.misionVision .right .img1 {
+.misionVision .left .img1 {
   position: absolute;
-  left: -110px;
+  right: -43px;
+  top: 24%;
 }
-.misionVision .right .img2 {
+.misionVision .left .img2 {
   position: absolute;
-  left: -135px;
+  right: 0;
+  top: 44%;
 }
-.misionVision .right .img3 {
+.misionVision .left .img3 {
   position: absolute;
-  left: -160px;
+  right: 50px;
+  top: 64%;
 }
 
-.misionVision .right .agil {
-  position: relative;
-  left: 30px;
-  max-width: 70%;
+.misionVision .right .caract1 {
+  position: absolute;
+  left: 20px;
+  top: 20%;
 }
-.misionVision .right .compr {
-  position: relative;
-  left: 5px;
-  max-width: 70%;
-}
-.misionVision .right .inno {
-  position: relative;
+.misionVision .right .caract2 {
+  position: absolute;
   left: -20px;
-  max-width: 70%;
+  top: 40%;
 }
-.clean img{
-  width: 100%;
-  height: 300px;
-position: relative;
-object-fit: cover;
+.misionVision .right .caract3 {
+  position: absolute;
+  left: -60px;
+  top: 60%;
+}
+
+.clean {
+  background-image: url(/alun/images/nosotros/RECURSOS/FOTO\ INTERMEDIA\ RECORTADA.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 450px;
+  width: 100%; 
 }
 
 .alcance {
   width: 100%;
   height: 600px;
-  background-color: #080438;
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+.alcance .textAlcance {
+  width: 50%;
+  max-width: 600px;
 }
 .alcance .textAlcance .encabezado {
-  width: 50%;
+  width: 60%;
   color: white;
   margin: 100px auto;
   font-size: small;
   display: flex;
   flex-direction: column;
 }
+.alcance .textAlcance .encabezado span{
+ 
+  margin-bottom: 15px ;
+  font-size: small;
+
+}
+
+.alcance .textAlcance .line-2 {
+  width: 100px;
+  height: 2px;
+  background-color: #2f9ae1;
+  z-index: 9;
+  margin-bottom: 15px;
+}
+
 .alcance .logosAlcance {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
+  margin: 0 120px;
 }
 .alcance .logosAlcance div {
   display: flex;
@@ -485,22 +615,25 @@ object-fit: cover;
 
 .alcance .logosAlcance img {
   width: 45px;
+  height: 45px;
 }
 .alcance .logosAlcance span {
   font-size: xx-small;
   color: white;
   margin-top: 7px;
 }
-.alcance .logosAlcance .line{
+.alcance .logosAlcance .line {
   margin-top: 6px;
   height: 2px;
   width: 50px;
 }
 .alcance .alcanceMap {
-  width: 100%;
+  width: 600px;
+  min-width: 600px;
   height: auto;
   position: relative;
   transition: transform 0.4s ease;
+  right: 30px;
 }
 .alcance .alcanceMap .map img {
   width: 200px;
@@ -533,7 +666,6 @@ object-fit: cover;
   background-color: white;
 }
 
-
 .alcance .alcanceMap .rio img {
   height: 54px;
   position: absolute;
@@ -548,6 +680,7 @@ object-fit: cover;
   text-transform: uppercase;
   font-size: 10px;
   color: white;
+  width: 200px;
 }
 .alcance .alcanceMap .rio .enlace {
   height: 2px;
@@ -596,6 +729,7 @@ object-fit: cover;
   text-transform: uppercase;
   font-size: 10px;
   color: white;
+  width: 200px;
 }
 .alcance .alcanceMap .luis .enlace {
   height: 2px;
@@ -644,6 +778,7 @@ object-fit: cover;
   text-transform: uppercase;
   font-size: 10px;
   color: white;
+  width: 200px;
 }
 .alcance .alcanceMap .bsas .enlace {
   height: 2px;
@@ -662,6 +797,7 @@ object-fit: cover;
 .alcance .alcanceMap .bsas img:hover,
 .alcance .alcanceMap .pampa img:hover {
   opacity: 0.6;
+  transition: 0.5s;
   transform: scale(1.2);
 }
 .alcance .provincias {
@@ -704,29 +840,34 @@ object-fit: cover;
   font-weight: 700;
 }
 .servicios {
-  background-color: #080438;
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
+
 }
-.servicios .info{
-padding-top: 80px;
-padding-bottom: 80px;
+.servicios .info {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  max-width: 1440px;
+  margin: auto;
 }
 .servicios .info .imagenes {
   position: relative;
   width: 70%;
-  height: 300px;
+  height: 350px;
   margin: auto;
 }
-.carousel-inner {
-  height: 300px;
-  width: inherit;
-  position: relative;
+.servicios .carousel-inner {
+  height: 350px;
+  width: 70%;
+  position: absolute;
+  right: 0;
 }
 
-.servicios .info .imagenes #carouselExampleAutoplaying .carousel-item {
-  height: 300px;
-  width: 100%;
-  position: absolute;
-  left: 200px;
+.servicios .carousel-item {
+  transition: transform 1s ease-in-out;
+}
+.servicios .carousel-item img{
+  height: 350px;
 }
 .servicios .info .imagenes .logoa img {
   position: absolute;
@@ -734,12 +875,15 @@ padding-bottom: 80px;
   left: 30px;
   height: 50px;
 }
-
+.servicios .info .imagenes .logoa img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
 .servicios .info .imagenes .colorIzq img {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 300px;
+  height: 350px;
 }
 .servicios .info .imagenes .colorDer img {
   position: absolute;
@@ -774,77 +918,95 @@ padding-bottom: 80px;
 
 .servicios .container {
   color: white;
-  width: 70%;
-  margin-top: 30px;
- 
+  width: 65%;
+  margin-top: 10px;
 }
-.servicios .container .col{
+.servicios .container .col {
   text-align: left;
-  width: 80%;
+  padding: 20px;
 }
-.servicios .container img{
+
+.servicios .container .col img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.servicios .container img {
   height: 40px;
   margin-bottom: 10px;
 }
-.servicios .container h3{
+.servicios .container h3 {
   font-size: larger;
   font-weight: 400;
   margin-bottom: 0;
 }
-.servicios .container .resaltado{
-  font-size: small;
+.servicios .container .resaltado {
+  font-size: medium;
 }
-.servicios .container ul{
-  font-size: small;
+.servicios .container ul {
+  font-size: medium;
   text-align: left;
+  padding: 0 0 0 15px;
 }
-.color1{
+.color1 {
   color: #93cc04;
-  
+  border-color: #93cc04;
 }
-.colorb1{
-  background-color:  #93cc04;
+
+.colorb1 {
+  background-color: #93cc04;
 }
-.color2{
+.color2 {
   color: #ed9005;
-  
+  border-color: #ed9005;
 }
-.colorb2{
+.colorb2 {
   background-color: #ed9005;
 }
 
-.color3{
-color: #2f9ae1;
-
+.color3 {
+  color: #2f9ae1;
+  border-color: #2f9ae1;
 }
-.colorb3{
+.colorb3 {
   background-color: #2f9ae1;
 }
 
-.servicios .container .line{
+.color4{
+  color: #ffdd1f;
+  border-color: #ffdd1f;
+}
+.servicios .container .line {
   width: 50px;
   height: 3px;
- 
+
   margin-bottom: 10px;
 }
 
-.servicios .container .resaltado{
+.servicios .container .resaltado {
   margin-bottom: 15px;
-  
 }
 
-.servicios .nuestrasImagenes{
+.servicios .nuestrasImagenes {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 60px;
-  
 }
-
+.nuestraEmpresa{
+  background-image: url(/alun/images/servicios/RECURSOS/NOSOTROS_03.png);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 450px;
+  width: 100%; 
+}
 .productos .ventas .imagenes {
   width: 100%;
-  height: 50vh;
+  height: 400px;
   position: relative;
-  background-color: #080438;
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
+
 }
 .productos .ventas .imagenes .colorIzq img {
   height: 100%;
@@ -864,10 +1026,19 @@ color: #2f9ae1;
 .productos .ventas .imagenes .logoa img {
   height: 40px;
   position: absolute;
-  bottom: 60px;
-  left: 200px;
+  bottom: -110px;
+  left:0;
 }
-
+.productos .ventas .imagenes .logoa img:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+.productos .center{
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
 .productos .ventas .imagenes .area {
   display: flex;
   flex-direction: column;
@@ -875,7 +1046,7 @@ color: #2f9ae1;
   z-index: 2;
   position: absolute;
   top: 80px;
-  left: 200px;
+  left: 15%;
   font-size: x-large;
   font-weight: 100;
 }
@@ -886,10 +1057,10 @@ color: #2f9ae1;
 }
 .productos .ventas .imagenes .description {
   color: white;
-  width: 30%;
-  height: 50vh;
+ width: 400px;
+  height: 400px;
   position: absolute;
-  left: 50%;
+  right: 15%;
   top: 80px;
   font-size: small;
   display: flex;
@@ -898,40 +1069,50 @@ color: #2f9ae1;
 .productos .ventas .imagenes .description span {
   margin-bottom: 20px;
 }
-.productos .ventas .imagenes .description h3 {
+.productos .ventas .imagenes .description h6 {
   display: flex;
   flex-direction: row;
-  font-size: medium;
+  font-size: small;
   align-items: center;
+  margin-top: 10px;
+}
+.productos .ventas .imagenes .description a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.productos .ventas .imagenes .description img {
+  width: 33px;
+  margin: 10px;
 }
 
-.productos .ventas .imagenes .description h3 button {
-  margin-left: 25px;
-  background-color: inherit;
-  color: white;
-  border: #ed9005 2px solid;
-  border-radius: 36px;
-  padding: 6px 10px;
-  font-size: medium;
+.productos .ventas .imagenes .description h6 b {
+  margin-left: 5px;
+  color: #ed9005;
 }
 
 .productos .ventas .diferencia {
-  height: 600px;
-  background-color: #080438;
+  height: 880px;
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .productos .ventas .diferencia .imgDif {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;  
+  background-image: url(/alun/images/productos/RECURSOS/IMAGENES\ VENTAS_\ \(1\).jpg);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 450px;
+  width: 100%; 
 }
 .productos .ventas .diferencia .container {
   width: 70%;
   position: absolute;
-  top: 260px;
+  top: 410px;
 }
 .productos .ventas .diferencia .container .col {
   display: flex;
@@ -943,32 +1124,58 @@ color: #2f9ae1;
   width: 80px;
   margin-bottom: 30px;
 }
+
+.productos .ventas .diferencia .container .col img:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
 .productos .ventas .diferencia .container .col span {
   width: 80%;
   color: white;
   font-size: small;
 }
-.contacto {
-  background-color: #080438;
+.productos .marcasTop {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 40px;
 }
-.contacto .contenido{
+.productos .marcasTop img {
+  width: 250px;
+  margin: auto;
+}
+.contacto {
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
+width: 100%;
+}
+.contacto .contenido {
   background-image: url(/alun/images/contacto/RECURSOS/tramaFondoAzul.png);
   background-repeat: repeat;
   object-fit: cover;
   background-size: 1000px;
+
+  
+  position: relative;
+}
+.contacto .contenido .center{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  min-width: 1080;
 }
 
 .contacto .formulario {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   padding: 100px 0 100px 200px;
   position: relative;
 }
-.contacto .formulario h3{
+.contacto .formulario h3 {
   color: white;
 }
 .contacto .formulario form {
@@ -976,8 +1183,9 @@ color: #2f9ae1;
   flex-direction: column;
   color: white;
   font-size: small;
-
+  max-width: 400px;
   font-weight: 600;
+  min-width: 300px;
 }
 .contacto .formulario form textarea,
 .contacto .formulario form input {
@@ -987,53 +1195,66 @@ color: #2f9ae1;
 .contacto .formulario form button {
   color: white;
   border: none;
-  background-color: #051a59;
+  background: #051a59;
+  background: linear-gradient(
+    270deg,
+    rgb(1, 55, 126) 2%,
+    rgb(24, 114, 173) 19%,
+    rgb(1, 55, 126) 71%
+  );
   font-size: small;
   padding: 5px;
   font-weight: 600;
 }
-.contacto .info{
+.contacto .info {
   width: 50%;
   position: relative;
-}
-.contacto  .info .logoConImagen{
-  position: absolute;
-  right: -150px;
-  bottom: -3px;
- height: 120%;
- z-index: 0;
+  
 }
 
-.contacto  .info .data{
+.contacto .info .data {
   color: white;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 160px;
-  left: 150px;
+  left: 120px;
   z-index: 3;
+  width: 350px;
 }
-.contacto  .info .data span{
-  margin-bottom: 7px;
+.contacto .info .data span {
+  margin-left: 15px;
 }
-.contacto  .info .iconos {
+.contacto .info .iconos {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 156px;
-  left: 100px;  
+  left: 100px;
  
 }
-.contacto  .info .iconos img{
-  width: 25px;
-  padding: 3px;
- margin-bottom: 5px;
+.contacto .info .data img {
+  width: 20px;
+  height: auto;
+  margin: 10px;
+
+}
+.contacto .info .data div {
+display: flex;
+flex-direction: row;
+width: 100%;
+align-items: center;
+}
+.contacto .contenido .logoConImagen {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 0;
 }
 
-
-
 footer {
-  height: 50vh;
+  height: 250px;
   background-image: url(/alun/images/fondoFooter.png);
   background-size: cover;
   display: flex;
@@ -1061,9 +1282,8 @@ footer .datos ul {
 }
 .redes {
   margin: 0 15px;
-  
 }
-.redes img{
+.redes img {
   height: 25px;
   margin: 10px;
 }

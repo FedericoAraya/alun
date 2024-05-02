@@ -9,9 +9,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="../alun/style.css" />
     <title>Alun</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" style="border-radius: 50px;">
+    <link rel="shortcut icon" href="/alun/images/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <a
@@ -26,7 +30,7 @@
   </a>
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="/alun/index.html"
           ><img src="/alun/images/LOGO ALUN PARTE SUPERIOR.png" alt="Logo Alun"
         /></a>
         <button
@@ -46,7 +50,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+              <a class="nav-link active" aria-current="page" href="/alun/index.html">INICIO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/alun/pages/nosotros.html">NOSOTROS</a>
@@ -76,10 +80,11 @@
           <b>Más de 25 años</b>
           <span class="sub-title">haciéndolo por vos. </span>
           <span class="text"
-            >Somos una empresa de servicios de generales con más de 20 años de
-            trayectoria en el mercado. Nuestro recurso más preciado son los
-            profesionales capacitados, que nos hacen ser reconocidos por nuestro
-            compromiso con la calidad, eficiencia y honestidad.</span
+            >Con más de 25 años de experiencia en el mercado estamos
+            consolidados como una empresa líder en servicios.
+            Tenemos como política adaptarnos a las necesidades de
+            nuestros clientes, dando soluciones con compromiso,
+            agilidad, calidad, eficiencia y honestidad.</span
           >
           <a href="/alun/pages/nosotros.html">Ver más →</a>
           
@@ -88,33 +93,36 @@
     
      
     </section>
-    <div class="trama"></div>
-    <div class="trama1"></div>
+    <div class="trama">
+    
+  </div>
+  <div class="counter">
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-center"><span class="mas">+</span><b class="contador1">0</b></div>    
+            <span>provincias</span>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-center"><span class="mas">+</span><b class="contador2">0</b></div>       
+         <span>servicios</span>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-center"><span class="mas">+</span><b class="contador3">0</b></div>   
+             <span>sectores y rubros</span>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-center "><span class="mas">+</span><b class="contador4">0</b></div>
+      <span>productos a la venta</span>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-center "><span class="mas">+</span><b class="contador5">0</b></div>
+      <span>de experiencia</span>
+    </div>
+  </div>
+
     </header>
-      <div class="counter">
-        <div class="d-flex flex-column">
-          <b>+6</b>
-          <span>provincias</span>
-        </div>
-        <div class="d-flex flex-column">
-          <b>+15</b>
-          <span>servicios</span>
-        </div>
-        <div class="d-flex flex-column">
-          <b>10</b>
-          <span>sectores y rubros</span>
-        </div>
-        <div class="d-flex flex-column">
-          <b>+1000</b>
-          <span>productos a la venta</span>
-        </div>
-        <div class="d-flex flex-column">
-          <b>+25 AÑOS</b>
-          <span>de experiencia</span>
-        </div>
-      </div>
-  
+
     <section class="personal">
+      <div class="description">
       <div class="line"></div>
         <span>
           Con una visión clara y un equipo altamente capacitado y
@@ -123,6 +131,7 @@
           servicios y a contribuir al desarrollo y bienestar de las
           comunidades en las que operamos.
         </span>
+      </div>
     </section>
     <section class="cards">
 
@@ -138,11 +147,13 @@
                 <b>MANTENIMIENTO</b>
               </h3>
               <div class="lineaCard"></div>
-              <a href="/alun/pages/servicios.html#mantenimiento">Ver servicios →</a>
-            </div>
+              <button class="button-28 color1 d-none" role="button">
+              <a class="color1" href="/alun/pages/servicios.html#mantenimiento">Ver servicios →</a>
+              </button>
+          </div>
         </div>
-        <div class="card2">            
-                <img class="capa" src="/alun/images/manteniemiento/tapa mantenimiento.jpg" alt="capa">
+        <div class="card1">            
+                <img class="capa " src="/alun/images/manteniemiento/tapa mantenimiento.jpg" alt="capa">
                 <img class="fondo" src="/alun/images/limpieza/foto.png" alt="Foto Mantenimiento">
                 <img class="faja" src="/alun/images/limpieza/Barra superior.png" alt="detalle verde">
                 <img class="logo" src="/alun/images/limpieza/icono limpieza.png" alt="Logo Mantenimiento">
@@ -153,10 +164,12 @@
                     <b>LIMPIEZA</b>
                   </h3>
                   <div class="lineaCard"></div>
-                  <a href="/alun/pages/servicios.html#limpieza">Ver servicios →</a>
+                  <button class="button-28 color4 d-none" role="button">
+                  <a class="color4" href="/alun/pages/servicios.html#limpieza">Ver servicios →</a>
+                </button>
                 </div>         
         </div>
-        <div class="card3">           
+        <div class="card1">           
                 <img class="capa" src="/alun/images/manteniemiento/tapa mantenimiento.jpg" alt="capa">
                 <img class="fondo" src="/alun/images/controlPlagas/foto control.png" alt="Foto Mantenimiento">
                 <img class="faja" src="/alun/images/controlPlagas/linea superior.png" alt="detalle verde">
@@ -168,10 +181,12 @@
                     <b>CONTROLA DE PLAGAS</b>
                   </h3>
                   <div class="lineaCard"></div>
-                  <a href="/alun/pages/servicios.html#plagas">Ver servicios →</a>
+                  <button class="button-28 color3 d-none" role="button">
+                  <a class="color3" href="pages/servicios.html#plagas">Ver servicios →</a>
+                </button> 
                 </div>          
         </div>
-        <div class="card4">            
+        <div class="card1">            
                 <img class="capa" src="/alun/images/manteniemiento/tapa mantenimiento.jpg" alt="capa">
                 <img class="fondo" src="/alun/images/venta/Foto venta.png" alt="Foto Mantenimiento">
                 <img class="faja" src="/alun/images/venta/linea superior.png" alt="detalle verde">
@@ -182,54 +197,75 @@
                     <span>ÁREA DE</span>
                     <b>PRODUCTOS</b>
                   </h3>
-                  <div class="lineaCard"></div>
-                  <a href="/alun/pages/productos.html">Ver productos →</a>
+                  <div class="lineaCard"></div>      
+                    <button class="button-28 color2 d-none" role="button">
+                  <a class="color2" href="/alun/pages/productos.html">Ver productos →</a>
+                    </button>
                 </div>       
         </div>
     </section>
 <section class="clients">
   <h4><b>AMPLIA EXPERIENCIA </b>POTENCIANDO EL VALOR DE LAS MARCAS</h4>
-  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="logosFirmas">
-          <img src="/alun/images/Logos marcas/AEROLINEAS.png" alt="...">
-          <img src="/alun/images/Logos marcas/anonima.png"  alt="...">
-          <img src="/alun/images/Logos marcas/APEX.png"  alt="...">
-          <img src="/alun/images/Logos marcas/BLP.png"  alt="...">
-          <img src="/alun/images/Logos marcas/CARGILL.png"  alt="...">
-          <img src="/alun/images/Logos marcas/CHANGOMAS.png"  alt="...">
-        </div>        
+  
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/AEROLINEAS.png" alt="...">
       </div>
-      <div class="carousel-item">
-        <div class="logosFirmas">
-          <img src="/alun/images/Logos marcas/CHEVROLET.png"  alt="...">
-          <img src="/alun/images/Logos marcas/FORD.png"  alt="...">
-          <img src="/alun/images/Logos marcas/LACOSTE.png" alt="...">
-          <img src="/alun/images/Logos marcas/OCASA.png"  alt="...">
-          <img src="/alun/images/Logos marcas/PAMI.png"alt="...">
-          <img src="/alun/images/Logos marcas/PERSONAL.png" alt="...">
-        </div> 
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/anonima.png"  alt="...">
       </div>
-      <div class="carousel-item">
-        <div class="logosFirmas">
-          <img src="/alun/images/Logos marcas/PIRELLI.png"  alt="...">
-          <img src="/alun/images/Logos marcas/SANCOR SEGUROS.png"  alt="...">
-          <img src="/alun/images/Logos marcas/TGN.png"  alt="...">
-          <img src="/alun/images/Logos marcas/VOLKSWAGEN.png"  alt="...">
-          <img src="/alun/images/Logos marcas/WALMART.png"  alt="...">
-          <img src="/alun/images/Logos marcas/YPF.png"  alt="...">
-        </div> 
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/APEX.png"  alt="...">
+       </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/BLP.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/CARGILL.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/CHANGOMAS.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/CHEVROLET.png"  alt="...">
+       </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/FORD.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/LACOSTE.png" alt="...">
+  
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/OCASA.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/PAMI.png"alt="...">
+    
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/PERSONAL.png" alt="...">
+       </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/PIRELLI.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/SANCOR SEGUROS.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/TGN.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/VOLKSWAGEN.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/WALMART.png"  alt="...">
+      </div>
+      <div class="slide">
+        <img src="/alun/images/Logos marcas/YPF.png"  alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 </section>
 <div class="limpiezaAltura">
@@ -264,5 +300,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="/alun/script.js"></script>
   </body>
 </html>
