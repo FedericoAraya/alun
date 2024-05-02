@@ -145,7 +145,7 @@ background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
 }
 
 .personal {
-  background-image: url(/alunimages/Fotos/pasto.jpg);
+  background-image: url(/alun/images/Fotos/pasto.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
