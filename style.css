@@ -7,6 +7,7 @@ body {
 }
 .navbar-nav {
   align-items: center;
+
 }
 .nav-link {
   font-size: small;
@@ -70,6 +71,8 @@ background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
   padding: 0;
 }
 
+
+
 .principal h2 .sub-title {
   color: #2f9ae1;
   font-weight: 600;
@@ -114,6 +117,7 @@ background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
   justify-content: center;
   padding: 40px 0 70px 0;
   flex-wrap: wrap;
+  
 }
 .counter .flex-row {  
   flex-wrap: nowrap;
@@ -188,7 +192,7 @@ background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
   background-size: 70%;
   z-index: 2;
 }
-.cards .card1 {
+.cards .card1{
   width: 20rem;
   height: 30.37rem;
   position: relative;
@@ -631,7 +635,7 @@ margin: 0 auto;
   width: 600px;
   min-width: 600px;
   height: auto;
-  position: relative;
+ position: relative;
   transition: transform 0.4s ease;
   right: 30px;
 }
@@ -1185,7 +1189,6 @@ width: 100%;
   font-size: small;
   max-width: 400px;
   font-weight: 600;
-  min-width: 300px;
 }
 .contacto .formulario form textarea,
 .contacto .formulario form input {
