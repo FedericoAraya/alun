@@ -1283,3 +1283,115 @@ footer .datos ul {
   height: 25px;
   margin: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .principal {
+    height: 700px;
+  }
+
+.principal h2{
+  width: 100%;
+  top: 90px;
+  left: 10%;
+ }
+.principal h2 .text{
+width: 60%;
+font-size: 1.4rem;
+min-width: 0;
+margin-top: 20px;
+}
+
+.principal img{
+    height:70%;
+    top: 200px;
+    right: -150px;
+   
+  }
+  .trama {
+    height: 120px;    
+    top: 520px;
+  }
+  .counter {  
+
+    justify-content:space-around;
+  }
+
+  .counter div b {  
+    font-size: 2rem  
+  }
+
+  .counter .flex-column{
+    margin: 10px;
+  }
+
+  .counter div span {
+    font-size: 0.8rem;
+  }
+
+  .counter div .mas {
+    font-size: 2rem; 
+  }
+
+  .personal {
+    background-size: cover;
+    background-position: center;
+    background-attachment:initial;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+  .personal .description{
+    max-width: 1680px;
+    height: 400px;
+    padding: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .personal .line{
+    width: 50%;
+  }
+  .personal span{
+    width: 200px;
+  }
+
+.cards{
+  height: auto; 
+}
+.card1{
+  width: 15rem !important; 
+  height: 22.79rem !important;
+}
+
+.clients{
+  height: 400px;
+  padding: 80px 5px 0px 5px;
+}
+
+ footer{
+  width: 100%;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+ } 
+ .redes {
+  margin: 0 ;
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 560px) {
+  .principal h2{
+    z-index: 3;
+      }
+      .principal h2 .text {
+        width: 90%;
+      }
+  .principal img{
+    opacity: 0.3;
+    z-index: 0;
+  }
+  .trama{
+    opacity: 0.3;
+  }
+}
