@@ -1294,11 +1294,13 @@ footer .datos ul {
   width: 100%;
   top: 90px;
   left: 10%;
+  font-size: 2rem;
  }
+
 .principal h2 .text{
-width: 60%;
-font-size: 1.4rem;
-min-width: 0;
+width: 50%;
+font-size: 1.2rem;
+min-width: 1px;
 margin-top: 20px;
 }
 
@@ -1366,6 +1368,284 @@ margin-top: 20px;
   height: 400px;
   padding: 80px 5px 0px 5px;
 }
+.limpiezaAltura {
+  background-size: cover;
+  background-position: right;
+  background-attachment: initial;
+  height: 300px;
+}
+
+.sup{
+  height: 250px;
+}
+
+.sup .fondo{
+  height: 250px;
+}
+
+.sup h2 {
+  font-size: 1.7rem;
+}
+.sobreNosotros .inf .textNos b { 
+  font-size: 1.2rem;
+}
+.sobreNosotros .inf .textNos {
+ font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 40px;
+}
+.misionVision {
+height: auto;
+}
+
+.misionVision .contenedor{
+  background: rgb(199,198,198);
+  background: radial-gradient(circle, rgba(199,198,198,1) 0%, rgba(152,153,155,1) 100%);
+width: 100%;
+
+flex-direction: column;
+height: auto;
+}
+.misionVision .left{
+  height: 510px;
+  padding: 30px;
+  align-items: center
+}
+.misionVision .left .fondo {
+display: none;
+}
+.misionVision .left .logo{
+  margin: 0;
+  height: 70px;
+}
+.misionVision .left .img1 {
+  right:auto;
+  left: calc(20vw - 35px);
+  bottom: -35px;
+  top: auto;
+  z-index: 8;
+}
+.misionVision .left .img2 {
+  right:auto;
+  left: calc(50vw - 35px);
+  bottom: -35px;
+  top: auto;
+}
+.misionVision .left .img3 {
+  right:auto;
+  left: calc(80vw - 35px);
+  bottom: -35px;
+  top: auto;
+}
+.misionVision .right {
+  width: 100%;
+
+  background: rgb(5,26,89);
+  background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
+margin: 0;
+  position: relative;
+
+}
+.misionVision .right .info{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.clean {
+  background-position: right;
+  background-attachment:local;
+  background-repeat: no-repeat;
+  height:300px;
+  width: 100%; 
+}
+.alcance { 
+  height: 900px;
+  flex-direction: column;
+  justify-content: inherit;
+}
+.alcance .textAlcance {
+  width: 100%;
+  max-width:100%;
+}
+.alcance .textAlcance .encabezado {
+
+  margin: 40px auto;
+
+}
+.alcance .logosAlcance {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.alcance .logosAlcance img {
+  width: 35px;
+  height: 35px;
+}
+.alcance .alcanceMap {
+  margin-left:  10vw;
+  transform: scale(0.7);
+  right: 200px;
+  width: 100%;
+  min-width: 300px;
+ }
+
+
+ .alcance .provincias {  
+  left: 95vw;
+ }
+ .alcance .ciudades {
+  
+  top: 450px;
+  left: 95vw;
+}
+
+.servicios .info {
+  padding-inline: 10px;
+}
+.servicios .info .imagenes {
+   width: 100%;
+  height: 200px;
+  margin: 0;
+}
+.servicios .carousel-inner {
+  height: 200px;
+  width: calc(100% - 115px);
+}
+.servicios .carousel-item img{
+  height: 200px;
+}
+.servicios .info .imagenes .logoa img {
+  bottom: 10px;
+  height: 30px;
+  left: 10px;
+}
+.servicios .info .imagenes .colorIzq img {
+  height: 200px;
+  width: 170px;
+}
+.servicios .info .imagenes .colorDer img {
+  height: 70px;
+}
+.servicios .info .imagenes .area {
+  top: 15px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.servicios .container .col {
+  min-width: 200px;
+}
+.servicios .container {
+  width: 90%;
+}
+.productos .ventas .imagenes .colorIzq img {
+  display: none;
+}
+.productos .ventas .imagenes .faja img {
+  height: 300px;
+
+}
+.productos .ventas .imagenes {
+ 
+  height: auto;
+
+}
+
+.productos .center{
+display: flex;
+flex-direction: column;
+height: auto;
+}
+.productos .ventas .imagenes .area {
+  position: relative;
+  left:  0;
+top: 0;
+padding: 30px;
+} 
+.productos .ventas .imagenes .description {
+width: 100%;
+height: auto;
+padding: 20px;
+  position: relative;
+left: 0;
+top: 0;
+background: rgb(5,26,89);
+background: radial-gradient(circle, rgba(5,26,89,1) 0%, rgba(8,4,56,1) 85%);
+z-index: 2;
+}
+
+.productos .ventas .imagenes .description a {
+font-size: 15px;
+}
+
+.productos .ventas .imagenes .description h6 {
+ font-size: 10px;
+}
+.productos .ventas .diferencia {
+  height: 1350px;
+}
+
+.productos .ventas .diferencia .imgDif {
+  background-position: center;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.productos .ventas .diferencia .container {
+  width: 90%;
+  top: 230px;
+}
+
+.productos .ventas .diferencia .container .row{
+width: 100%;
+}
+.productos .ventas .diferencia .container .col {
+ min-width: 300px;
+ margin-bottom: 30px;
+}
+.productos .marcasTop {
+  flex-direction: column;
+}
+.productos .marcasTop img{
+  padding: 30px !important;
+}
+
+.contacto .contenido .center{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  min-width: none;
+  
+}
+.contacto .formulario { 
+  width: 100%;
+  padding: 60px 0;
+  z-index: 2;
+}
+
+.contacto .info {
+  width: 90%;  
+}
+
+.contacto .info .data {
+
+  position: relative;
+  top: auto;
+  left: auto;
+margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+.contacto .contenido .logoConImagen {
+  height: 100%;
+ opacity: 0.2;
+}
 
  footer{
   width: 100%;
@@ -1383,9 +1663,12 @@ margin-top: 20px;
 @media only screen and (max-width: 560px) {
   .principal h2{
     z-index: 3;
+    font-size: 1.7rem;
       }
       .principal h2 .text {
-        width: 90%;
+        width: 80%;
+        font-size: 1rem;
+       
       }
   .principal img{
     opacity: 0.3;
