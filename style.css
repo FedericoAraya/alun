@@ -498,7 +498,6 @@ margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
 }
 
 .misionVision .right .info {
@@ -1285,7 +1284,9 @@ footer .datos ul {
 }
 
 @media only screen and (max-width: 768px) {
-
+.navbar-brand img{
+  margin-left: 40px;
+}
   .principal {
     height: 700px;
   }
